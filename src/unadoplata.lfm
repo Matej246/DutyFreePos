@@ -1,0 +1,85 @@
+object frmNadoplata: TfrmNadoplata
+  Left = 348
+  Height = 240
+  Top = 32
+  Width = 320
+  Caption = 'DutyFree POS – DFC nadoplata'
+  ClientHeight = 240
+  ClientWidth = 320
+  DesignTimePPI = 120
+  Font.CharSet = EASTEUROPE_CHARSET
+  Font.Height = -20
+  Font.Pitch = fpVariable
+  Font.Quality = fqDraft
+  LCLVersion = '4.8.0.0'
+  OnCreate = FormCreate
+  object lblNaslovNadoplata: TLabel
+    Left = 32
+    Height = 45
+    Top = 8
+    Width = 261
+    Caption = 'DFC NADOPLATA'
+    Font.CharSet = EASTEUROPE_CHARSET
+    Font.Height = -33
+    Font.Name = 'Segoe UI Semibold'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object lblSaldoNadoplata: TLabel
+    Left = 32
+    Height = 28
+    Top = 56
+    Width = 269
+    Caption = 'Trenutačni DFC saldo: 0,00 DFC'
+  end
+  object edtKodBona: TEdit
+    Left = 32
+    Height = 36
+    Top = 96
+    Width = 240
+    TabOrder = 0
+  end
+  object btnIskoristiBon: TButton
+    Left = 48
+    Height = 40
+    Top = 160
+    Width = 180
+    Caption = 'ISKORISTI BON'
+    Font.CharSet = EASTEUROPE_CHARSET
+    Font.Height = -20
+    Font.Name = 'Segoe UI Semibold'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 1
+    OnClick = btnIskoristiBonClick
+  end
+  object lblStatusNadoplate: TLabel
+    Left = 48
+    Height = 25
+    Top = 200
+    Width = 133
+    Caption = 'Status nadoplate'
+    Font.CharSet = EASTEUROPE_CHARSET
+    Font.Height = -18
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    Visible = False
+  end
+  object lblUputaBon: TLabel
+    Left = 75
+    Height = 17
+    Top = 128
+    Width = 153
+    Caption = 'Unesite barkod DFC bona:'
+    Font.CharSet = EASTEUROPE_CHARSET
+    Font.Height = -13
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+  end
+end
